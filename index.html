@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Madselkie</title>
+<meta name="description" content="Madselkie is an independent software studio. Makers of Toolbox and Lime Constructs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0b0d10;
+    --ink-soft:#151a20;
+    --line:#242b33;
+    --text:#e8e6e1;
+    --muted:#8b93a0;
+    --accent:#7fd8c4;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--ink);color:var(--text);
+    font-family:Inter,system-ui,-apple-system,sans-serif;
+    font-weight:300;line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
+  header{padding:28px 0;display:flex;justify-content:space-between;align-items:center}
+  .mark{font-family:"Instrument Serif",Georgia,serif;font-size:20px;letter-spacing:.02em}
+  .mark span{color:var(--accent)}
+  nav a{color:var(--muted);text-decoration:none;font-size:14px;margin-left:22px;transition:color .2s}
+  nav a:hover{color:var(--text)}
+  .hero{padding:72px 0 96px;border-bottom:1px solid var(--line)}
+  .kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:26px}
+  h1{
+    font-family:"Instrument Serif",Georgia,serif;font-weight:400;
+    font-size:clamp(40px,8vw,68px);line-height:1.04;letter-spacing:-.01em;
+  }
+  h1 em{font-style:italic;color:var(--accent)}
+  .lede{margin-top:28px;font-size:17px;color:var(--muted);max-width:46ch}
+  .lede strong{color:var(--text);font-weight:400}
+  section{padding:64px 0;border-bottom:1px solid var(--line)}
+  h2{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:26px;margin-bottom:8px}
+  .sub{color:var(--muted);font-size:14px;margin-bottom:36px}
+  .product{display:block;text-decoration:none;color:inherit;padding:22px 0;border-top:1px solid var(--line);transition:opacity .2s}
+  .product:last-of-type{border-bottom:1px solid var(--line)}
+  .product:hover{opacity:.7}
+  .prow{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+  .pname{font-size:19px;font-weight:400;letter-spacing:-.01em}
+  .ptype{font-size:12px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+  .pdesc{color:var(--muted);font-size:14px;margin-top:6px;max-width:52ch}
+  .about p{color:var(--muted);font-size:15px;max-width:56ch;margin-bottom:14px}
+  .about p:last-child{margin-bottom:0}
+  footer{padding:44px 0 64px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  footer a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:1px}
+  footer a:hover{color:var(--text)}
+  .selkie{
+    width:56px;height:56px;border-radius:50%;
+    border:1px solid var(--line);display:grid;place-items:center;
+    font-family:"Instrument Serif",Georgia,serif;font-size:22px;color:var(--accent);
+    margin-bottom:34px;
+  }
+  @media (prefers-reduced-motion:no-preference){
+    .hero > *{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+    .hero > *:nth-child(2){animation-delay:.06s}
+    .hero > *:nth-child(3){animation-delay:.12s}
+    @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark">madselkie<span>.</span></div>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="selkie">M</div>
+    <div class="kicker">Independent software studio</div>
+    <h1>Small studio.<br>Deliberately <em>few</em> things.</h1>
+    <p class="lede">Madselkie builds and owns software products. Not an agency, not a consultancy — we ship our own tools and keep them running.</p>
+  </div>
+
+  <section id="work">
+    <h2>Work</h2>
+    <p class="sub">Everything Madselkie has put its name on so far.</p>
+    <a class="product" href="https://tlbox.app" target="_blank" rel="noopener">
+      <div class="prow"><span class="pname">Toolbox</span><span class="ptype">Platform</span></div>
+      <p class="pdesc">A modular collection of utilities and small intelligence tools in one place. The reason this studio exists.</p>
+    </a>
+    <a class="product" href="#" target="_blank" rel="noopener">
+      <div class="prow"><span class="pname">Lime Constructs</span><span class="ptype">Tool</span></div>
+      <p class="pdesc">A 3D container and quote planner, extracted from Toolbox into something you can hand to a client.</p>
+    </a>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About</h2>
+    <p class="sub">Keep this short. Nobody reads it anyway.</p>
+    <p>Madselkie is a one-person studio for now. The name is older than the company — it was a handle long before it was a signature. It stuck.</p>
+    <p>The operating principle is subtraction: fewer products, fewer promises, finished work instead of a roadmap. If a product can't pay for itself, it gets cut or merged.</p>
+  </section>
+
+  <section id="contact" style="border-bottom:none">
+    <h2>Contact</h2>
+    <p class="sub">Email is the only channel.</p>
+    <p style="color:var(--muted);font-size:15px"><a href="mailto:hello@madselkie.com" style="color:var(--text);text-decoration:none;border-bottom:1px solid var(--line)">hello@madselkie.com</a></p>
+  </section>
+
+  <footer>
+    <span>© <span id="y">2026</span> Madselkie</span>
+    <span><a href="https://github.com/madselkie" target="_blank" rel="noopener">GitHub</a></span>
+  </footer>
+</div>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
