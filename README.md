@@ -1,14 +1,7 @@
-# madselkie.com
+# madselkie.github.io
 
-Source for the Madselkie site. Plain HTML, no build step. Served by GitHub Pages from the repository root on the `main` branch.
+The Madselkie site. Plain HTML, no build step, deployed by GitHub Pages from `main`.
 
-## Edit
+Edit `index.html` and push. That is the whole workflow.
 
-Change `index.html`. Commit. Push. Pages rebuilds in about a minute.
-
-## Domain
-
-`CNAME` holds the custom domain. DNS needs:
-
-- `A` records on `@` -> 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
-- `CNAME` on `www` -> madselkie.github.io
+Live: https://madselkie.github.io
