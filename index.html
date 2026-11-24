@@ -1,122 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Madselkie</title>
-<meta name="description" content="Madselkie is an independent software studio. Makers of Toolbox and Lime Constructs.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --ink:#0b0d10;
-    --ink-soft:#151a20;
-    --line:#242b33;
-    --text:#e8e6e1;
-    --muted:#8b93a0;
-    --accent:#7fd8c4;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{-webkit-text-size-adjust:100%}
-  body{
-    background:var(--ink);color:var(--text);
-    font-family:Inter,system-ui,-apple-system,sans-serif;
-    font-weight:300;line-height:1.65;
-    -webkit-font-smoothing:antialiased;
-  }
-  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
-  header{padding:28px 0;display:flex;justify-content:space-between;align-items:center}
-  .mark{font-family:"Instrument Serif",Georgia,serif;font-size:20px;letter-spacing:.02em}
-  .mark span{color:var(--accent)}
-  nav a{color:var(--muted);text-decoration:none;font-size:14px;margin-left:22px;transition:color .2s}
-  nav a:hover{color:var(--text)}
-  .hero{padding:72px 0 96px;border-bottom:1px solid var(--line)}
-  .kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:26px}
-  h1{
-    font-family:"Instrument Serif",Georgia,serif;font-weight:400;
-    font-size:clamp(40px,8vw,68px);line-height:1.04;letter-spacing:-.01em;
-  }
-  h1 em{font-style:italic;color:var(--accent)}
-  .lede{margin-top:28px;font-size:17px;color:var(--muted);max-width:46ch}
-  .lede strong{color:var(--text);font-weight:400}
-  section{padding:64px 0;border-bottom:1px solid var(--line)}
-  h2{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:26px;margin-bottom:8px}
-  .sub{color:var(--muted);font-size:14px;margin-bottom:36px}
-  .product{display:block;text-decoration:none;color:inherit;padding:22px 0;border-top:1px solid var(--line);transition:opacity .2s}
-  .product:last-of-type{border-bottom:1px solid var(--line)}
-  .product:hover{opacity:.7}
-  .prow{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
-  .pname{font-size:19px;font-weight:400;letter-spacing:-.01em}
-  .ptype{font-size:12px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
-  .pdesc{color:var(--muted);font-size:14px;margin-top:6px;max-width:52ch}
-  .about p{color:var(--muted);font-size:15px;max-width:56ch;margin-bottom:14px}
-  .about p:last-child{margin-bottom:0}
-  footer{padding:44px 0 64px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-  footer a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:1px}
-  footer a:hover{color:var(--text)}
-  .selkie{
-    width:56px;height:56px;border-radius:50%;
-    border:1px solid var(--line);display:grid;place-items:center;
-    font-family:"Instrument Serif",Georgia,serif;font-size:22px;color:var(--accent);
-    margin-bottom:34px;
-  }
-  @media (prefers-reduced-motion:no-preference){
-    .hero > *{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
-    .hero > *:nth-child(2){animation-delay:.06s}
-    .hero > *:nth-child(3){animation-delay:.12s}
-    @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-  }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>madselkie — an independent software company</title>
+<meta name="description" content="madselkie is an independent software company. It builds and operates Toolbox and lime-constructs.">
+<meta name="color-scheme" content="light">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23141519'/%3E%3Ctext x='16' y='22' font-family='Helvetica,Arial' font-size='17' fill='%23f6f5f1' text-anchor='middle'%3Em%3C/text%3E%3C/svg%3E">
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="mark">madselkie<span>.</span></div>
-    <nav>
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <div class="hero">
-    <div class="selkie">M</div>
-    <div class="kicker">Independent software studio</div>
-    <h1>Small studio.<br>Deliberately <em>few</em> things.</h1>
-    <p class="lede">Madselkie builds and owns software products. Not an agency, not a consultancy. We ship our own tools and keep them running.</p>
-  </div>
+<header class="masthead">
+  <a class="wordmark" href="/">madselkie</a>
+  <nav aria-label="Sections">
+    <a href="#products">Products</a>
+    <a href="#engineering">Engineering</a>
+    <a href="#notes">Notes</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <section id="work">
-    <h2>Work</h2>
-    <p class="sub">Everything Madselkie has put its name on so far.</p>
-    <a class="product" href="https://tlbox.app" target="_blank" rel="noopener">
-      <div class="prow"><span class="pname">Toolbox</span><span class="ptype">Platform</span></div>
-      <p class="pdesc">A modular collection of utilities and small intelligence tools in one place. The reason this studio exists.</p>
-    </a>
-    <div class="product">
-      <div class="prow"><span class="pname">Lime Constructs</span><span class="ptype">In preview</span></div>
-      <p class="pdesc">A 3D container and quote planner, extracted from Toolbox into something you can hand to a client.</p>
+<main>
+
+  <section class="opening">
+    <p class="label">Independent software company · Ikenne, Nigeria</p>
+    <h1>Two products.<br>One company.</h1>
+    <p class="statement">madselkie is the holding company behind Toolbox and lime-constructs. It builds them, hosts them and keeps them running.</p>
+    <dl class="facts">
+      <div><dt>Products</dt><dd>02</dd></div>
+      <div><dt>Platforms</dt><dd>Web, iOS, Android</dd></div>
+      <div><dt>Ownership</dt><dd>Independent, self&#8209;funded</dd></div>
+      <div><dt>Entity</dt><dd>Single operator</dd></div>
+    </dl>
+  </section>
+
+  <section id="products" class="block">
+    <p class="label"><span class="num">01</span> Products</p>
+    <div class="rows">
+
+      <article class="row">
+        <div class="row-head">
+          <h2>Toolbox</h2>
+          <p class="status"><span class="dot" aria-hidden="true"></span>Live</p>
+        </div>
+        <p class="desc">A modular workspace of small tools. A study tutor, an editable notebook of facts the system keeps about its user, and resizable widgets that belong to the operating system rather than to a webpage.</p>
+        <p class="stack">Next.js · TypeScript · PostgreSQL · Supabase · Flutterwave</p>
+        <p class="out"><a href="https://tlbox.app" rel="noopener">tlbox.app</a></p>
+      </article>
+
+      <article class="row">
+        <div class="row-head">
+          <h2>lime-constructs</h2>
+          <p class="status quiet">In development</p>
+        </div>
+        <p class="desc">A container planner for phones. Place, rotate and stack real container dimensions in a rendered scene, then read the packing result back as numbers a client can check.</p>
+        <p class="stack">React Native · Expo · three.js · TypeScript</p>
+        <p class="out"><a href="https://github.com/the-meyiwa/lime-constructs" rel="noopener">Source repository</a></p>
+      </article>
+
     </div>
   </section>
 
-  <section id="about" class="about">
-    <h2>About</h2>
-    <p>Madselkie is a one-person studio for now. The name is older than the company: it was a handle long before it was a signature, and it stuck.</p>
-    <p>The operating principle is subtraction: fewer products, fewer promises, finished work instead of a roadmap. If a product can't pay for itself, it gets cut or merged.</p>
+  <section id="engineering" class="block">
+    <p class="label"><span class="num">02</span> Engineering</p>
+    <div class="prose">
+      <p>TypeScript end to end. Postgres for anything that must survive a redeploy. Static hosting wherever a static file will do, and a server only where state or payment requires one.</p>
+      <p>One repository per product, deployed from a branch, no build step that cannot be reproduced. This page is HTML and CSS: zero bytes of client-side JavaScript, no trackers, no cookie notice, because there is nothing to consent to.</p>
+    </div>
   </section>
 
-  <section id="contact" style="border-bottom:none">
-    <h2>Contact</h2>
-    <p class="sub">Email is the fastest way in.</p>
-    <p style="color:var(--muted);font-size:15px"><a href="mailto:meyigbenee@gmail.com" style="color:var(--text);text-decoration:none;border-bottom:1px solid var(--line)">meyigbenee@gmail.com</a></p>
+  <section id="notes" class="block">
+    <p class="label"><span class="num">03</span> Notes</p>
+    <ol class="log">
+      <li>
+        <p class="when">22 Nov 2026</p>
+        <p class="what">lime-constructs: the container planner moved from a diagram to a rendered 3D scene with a live packing readout.</p>
+      </li>
+      <li>
+        <p class="when">18 Nov 2026</p>
+        <p class="what">Toolbox: subscription tiers shipped. Free, Plus and Pro at NGN 2,500 and 6,000, USD 3 and 8, settled through Flutterwave and recorded in Supabase.</p>
+      </li>
+      <li>
+        <p class="when">18 Nov 2026</p>
+        <p class="what">This site rebuilt as a single static document. Previous version retired rather than maintained.</p>
+      </li>
+    </ol>
   </section>
 
-  <footer>
-    <span>© <span id="y">2026</span> Madselkie</span>
-    <span><a href="https://github.com/madselkie" target="_blank" rel="noopener">GitHub</a></span>
-  </footer>
-</div>
-<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  <section id="contact" class="block">
+    <p class="label"><span class="num">04</span> Contact</p>
+    <div class="prose">
+      <p>Enquiries, defects and anything commercial go to one address. It is read.</p>
+      <p class="mail"><a href="mailto:meyigbenee@gmail.com">meyigbenee@gmail.com</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© <span id="year">2026</span> madselkie</p>
+  <p class="signals">Static HTML&nbsp;·&nbsp;0&nbsp;KB client JavaScript&nbsp;·&nbsp;GitHub Pages&nbsp;·&nbsp;Updated 24 November 2026</p>
+</footer>
+
 </body>
 </html>
