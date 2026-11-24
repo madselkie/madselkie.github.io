@@ -24,6 +24,11 @@
 <main>
 
   <section class="opening">
+    <figure class="plate" aria-hidden="true">
+      <video id="hero" autoplay muted loop playsinline preload="metadata" disablepictureinpicture disableremoteplayback poster="media/hero-poster.jpg">
+        <source src="media/hero.mp4" type="video/mp4">
+      </video>
+    </figure>
     <p class="label">Independent software company · Ikenne, Nigeria</p>
     <h1>Two products.<br>One company.</h1>
     <p class="statement">madselkie is the holding company behind Toolbox and lime-constructs. It builds them, hosts them and keeps them running.</p>
@@ -66,7 +71,7 @@
     <p class="label"><span class="num">02</span> Engineering</p>
     <div class="prose">
       <p>TypeScript end to end. Postgres for anything that must survive a redeploy. Static hosting wherever a static file will do, and a server only where state or payment requires one.</p>
-      <p>One repository per product, deployed from a branch, no build step that cannot be reproduced. This page is HTML and CSS: zero bytes of client-side JavaScript, no trackers, no cookie notice, because there is nothing to consent to.</p>
+      <p>One repository per product, deployed from a branch, no build step that cannot be reproduced. This page is HTML, CSS and one 662&nbsp;KB video loop. The only JavaScript is under a kilobyte, and its entire job is to pause that loop when it leaves the viewport. No trackers, no cookie notice, because there is nothing to consent to.</p>
     </div>
   </section>
 
@@ -83,7 +88,7 @@
       </li>
       <li>
         <p class="when">18 Nov 2026</p>
-        <p class="what">This site rebuilt as a single static document. Previous version retired rather than maintained.</p>
+        <p class="what">This site rebuilt as a single static document with a generated mesh loop in the masthead. Previous version retired rather than maintained.</p>
       </li>
     </ol>
   </section>
@@ -100,8 +105,9 @@
 
 <footer>
   <p>© <span id="year">2026</span> madselkie</p>
-  <p class="signals">Static HTML&nbsp;·&nbsp;0&nbsp;KB client JavaScript&nbsp;·&nbsp;GitHub Pages&nbsp;·&nbsp;Updated 24 November 2026</p>
+    <p class="signals">Static HTML&nbsp;·&nbsp;662&nbsp;KB video&nbsp;·&nbsp;under 1&nbsp;KB of JavaScript&nbsp;·&nbsp;GitHub Pages&nbsp;·&nbsp;Updated 24 November 2026</p>
 </footer>
 
+<script src="hero.js" defer></script>
 </body>
 </html>
